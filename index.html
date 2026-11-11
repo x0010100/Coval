@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee">
+  <meta name="description" content="Coval؛ آزمایشگاه تعاملی شیمی یازدهم. آزمایش کن، مدل مولکولی را ببین و نتیجه را با کتاب پیوند بده.">
+  <meta name="author" content="محمد طاها جلیلیان">
+  <title>Coval | آزمایشگاه شیمی یازدهم</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/vazirmatn-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=3.1.1-a11b8fd29f">
+  <link rel="stylesheet" href="lab.css?v=3.1.1-b482b516a6">
+  <link rel="stylesheet" href="tools.css?v=3.1.1-8ec9f0e8e7">
+  <link rel="stylesheet" href="experience.css?v=3.1.1-30dc81daa4">
+  <link rel="stylesheet" href="vendor-ui.css?v=3.1.1-501639ee3c">
+  <script defer src="science.js?v=3.1.1-4ee6193200"></script>
+  <script defer src="curriculum.js?v=3.1.1-8b9916b729"></script>
+  <script defer src="lab.js?v=3.1.1-4b925ce65b"></script>
+  <script defer src="tools.js?v=3.1.1-c45a0ee923"></script>
+  <script defer src="vendor-ui.js?v=3.1.1-139d6dbb3d"></script>
+  <script defer src="landscape.js?v=3.1.1-a5240c01d4"></script>
+  <script defer src="experience.js?v=3.1.1-85d22aece9"></script>
+  <script defer src="app.js?v=3.1.1-0be01cc4b3"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+  <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="راه‌های دسترسی">
+    <a class="brand" href="#lab/reactions" aria-label="Coval، میز آزمایش">
+      <img src="assets/mark.svg" width="45" height="49" alt="">
+      <span><strong dir="ltr" lang="en">Coval<span class="brand-dot">.</span></strong><small>آزمایشگاه شیمی یازدهم</small></span>
+    </a>
+    <button class="icon-button mobile-close" id="close-menu" aria-label="بستن فهرست">×</button>
+    <nav class="primary-nav" aria-label="بخش‌های اصلی">
+      <a href="#lab/reactions" data-nav="lab"><span data-icon="flask"></span>میز آزمایش<span class="nav-indicator"></span></a>
+      <a href="#book" data-nav="book"><span data-icon="book"></span>مسیر کتاب<span class="nav-indicator"></span></a>
+      <a href="#notebook" data-nav="notebook"><span data-icon="notebook"></span>دفترچهٔ من<span class="notebook-count" id="notebook-count">۰</span></a>
+    </nav>
+    <div class="rail-label">سه فصل، یک مسیر کشف</div>
+    <nav class="chapter-nav" aria-label="فصل‌های کتاب">
+      <a href="#book/1"><span class="chapter-number">۰۱</span><span>هدایای زمینی<small>از عنصر تا هیدروکربن</small></span></a>
+      <a href="#book/2"><span class="chapter-number">۰۲</span><span>در پی غذای سالم<small>انرژی و سرعت واکنش</small></span></a>
+      <a href="#book/3"><span class="chapter-number">۰۳</span><span>پوشاک و بسپارها<small>از مولکول تا ماده</small></span></a>
+    </nav>
+    <div class="rail-bottom">
+      <div class="progress-caption"><span>مسیر یادگیری تو</span><span id="progress-count">۰ از ۵۴</span></div>
+      <div class="progress-track" role="progressbar" aria-label="درس‌های مرورشده" aria-valuemin="0" aria-valuemax="54" aria-valuenow="0" id="progress-bar"><i></i></div>
+      <a class="source-link" href="#guide"><span data-icon="source"></span><span>بر پایهٔ کتاب شیمی ۲<small>چاپ ۱۴۰۵ · سه فصل کامل</small></span><span data-icon="arrow"></span></a>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-start"><button class="icon-button menu-toggle" id="open-menu" aria-label="بازکردن فهرست" aria-expanded="false" aria-controls="sidebar"><span data-icon="menu"></span></button><a class="studio-brand" href="#lab/reactions" aria-label="Coval، میز آزمایش"><strong dir="ltr" lang="en">Coval<span>.</span></strong><small>شیمی را لمس کن</small></a></div>
+      <div id="glass-dock"><nav class="dock-fallback" aria-label="بخش‌های اصلی"><a href="#lab/reactions">آزمایشگاه</a><a href="#book">مسیر کتاب</a><a href="#notebook">دفترچه</a></nav></div>
+      <div class="topbar-actions"><a class="quiet-link" href="#guide" aria-label="راهنمای آزمایشگاه"><span data-icon="help"></span><span>راهنمای آزمایشگاه</span></a><button class="icon-button" id="theme-toggle" aria-label="فعال‌کردن حالت تاریک"><span data-icon="moon"></span></button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <nav class="mobile-lab-bridge" aria-label="دسترسی سریع آزمایش"><button type="button" data-lab-jump="stage"><span data-icon="flask"></span>صحنهٔ آزمایش</button><button type="button" data-lab-jump="controls"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg>تنظیم‌ها</button></nav>
+    <footer class="site-footer"><span><bdi lang="en">Coval</bdi>، برای فهمیدن آنچه نمی‌بینیم.<small class="creator-credit">طراحی و ساخت: <strong>محمد طاها جلیلیان</strong></small></span><a href="#guide">منبع و شیوهٔ مدل‌سازی<span data-icon="arrow"></span></a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message"><form method="dialog"><h2 id="confirm-title">پاک‌کردن دفترچه</h2><p id="confirm-message">همهٔ آزمایش‌های ذخیره‌شده از این مرورگر پاک شوند؟</p><div class="tool-actions"><button class="btn btn-secondary" value="cancel">نگه‌دار</button><button class="btn btn-danger" value="confirm">پاک کن</button></div></form></dialog>
+  <noscript><div class="noscript">برای استفاده از شبیه‌سازی‌ها، جاوااسکریپت مرورگر باید فعال باشد.</div></noscript>
+</body>
+</html>
