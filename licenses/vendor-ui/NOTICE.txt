@@ -1,0 +1,18 @@
+Madda interface islands: bundled third-party components
+
+glisse 0.5.0 — MIT
+kubai-icons 0.5.0 — MIT
+kubai-icons-react 0.5.0 — MIT
+react 19.3.1 — MIT
+react-dom 19.3.1 — MIT
+scheduler 0.28.0 — MIT
+
+Glisse: https://github.com/0kzh/glisse
+Kubai Icons: https://github.com/kubai087/kubai-icons
+React: https://github.com/facebook/react
+
+Local build adaptation: Glisse spring reduced-motion checks also honor internal effective-motion gates; moving springs settle on the next scheduled frame when motion is suppressed.
+Navigation motion runs automatically and respects the operating system reduced-motion preference. The navigation has no user-facing motion toggle.
+The original installed package is unchanged. The adaptation is applied by scripts/build-vendor.mjs.
+Kubai icon geometry and viewBox are unchanged. Only Flask, BookOpen and Notebook are imported.
+The Kubai authoring skill is not redistributed. Published icon/runtime package MIT notices are included.
